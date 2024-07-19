@@ -6,13 +6,13 @@ import az.ingress.model.response.EmployeesResponse;
 import java.util.List;
 
 public interface EmployeesService {
-     void createEmployees(CreateOrUpdateEmployeesRequest request);
+     void createEmployee(CreateOrUpdateEmployeesRequest request);
 
-     EmployeesResponse getEmployees(Long id);
+     EmployeesResponse getEmployee(Long id);
 
      List<EmployeesResponse> getEmployees();
 
-     void deleteEmployees(Long id);
+     void deleteEmployee(Long id);
 
     void uptadeEmployeesSalary(Long id, CreateOrUpdateEmployeesRequest request);
 
